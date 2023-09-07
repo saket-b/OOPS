@@ -15,6 +15,7 @@ public:
 	}
 
 	// Copy constructor
+	
 	Point( Point &p1)
 	{
 		x = p1.x;

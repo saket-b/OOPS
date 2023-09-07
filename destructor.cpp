@@ -31,9 +31,7 @@ public:
 	~Test()
 		{
 			cout<<"\n Destructor executed";
-            #include<bits/stdc++.h>
-
-using namespace std;
+  
 		}
 };
 int main()
