@@ -51,6 +51,9 @@ class Box
 		cout << "The value of the length is: " << length << endl;
 		cout << "The value of the breadth is: " << breadth << endl;
 		cout << "The value of the height is: " << height << endl;
+		length++;
+		breadth++;
+		height++;
 	}
 };
 
