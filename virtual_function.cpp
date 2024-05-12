@@ -55,6 +55,7 @@ class Derived : public Base
   public:
     void Method1 ()  {  std::cout << "Derived::Method1" << std::endl;  }
     void Method2 ()  {  std::cout << "Derived::Method2" << std::endl;  }
+     void Method3 ()  {  std::cout << "Derived::Method2" << std::endl;  }
 };
 
 int main()
@@ -64,5 +65,5 @@ Base* basePtr = new Derived ();
   //  Note - constructed as Derived, but pointer stored as Base*
 
 basePtr->Method1 ();  //  Prints "Base::Method1"
-basePtr->Method2 ();  //  Prints "Derived::Method2"
+basePtr->Method3 ();  //  Prints "Derived::Method2"
 }

@@ -4,14 +4,18 @@
 using namespace std;
 
 class Point {
-private:
+public:
 	int x, y;
 
 public:
-	Point(int x1, int y1)
+	// Point(int x1, int y1)
+	// {
+	// 	x = x1;
+	// 	y = y1;
+	// }
+	Point( )
 	{
-		x = x1;
-		y = y1;
+
 	}
 
 	// Copy constructor
@@ -28,9 +32,11 @@ public:
 
 int main()
 {
-	Point p1(10, 15); // Normal constructor is called here
+	Point p1; // Normal constructor is called here
 	Point p2 = p1; // Copy constructor is called here
 
+	p2.x  = 50; 
+	p2.y = 60;
 	// Let us access values assigned by constructors
 	cout << "p1.x = " << p1.getX()
 		<< ", p1.y = " << p1.getY();

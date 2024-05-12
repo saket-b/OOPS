@@ -1,0 +1,3 @@
+europe	germeny	182.938
+europe	france	337.825
+asia	india	93.6667

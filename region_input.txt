@@ -1,0 +1,4 @@
+asia
+europe
+asia
+africa
