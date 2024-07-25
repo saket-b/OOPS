@@ -68,15 +68,16 @@ int Box :: height = 30;
 int main()
 {
 	
-	Box b;
+	Box::print();
+	// Box b;
 	
-	cout << "Static member function is called through Object name: \n" << endl;
-	b.print();
+	// cout << "Static member function is called through Object name: \n" << endl;
+	// b.print();
 
 	
-	Box c;
-	cout << "\nStatic member function is called through Class name: \n" << endl;
-	c.print();
+	// Box c;
+	// cout << "\nStatic member function is called through Class name: \n" << endl;
+	// c.print();
 	
 	return 0;
 }

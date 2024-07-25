@@ -30,10 +30,10 @@ struct node
     /* data */
 };
 
-// static void print()
-// {
-//     print("print inside main\n");
-// }
+static void print()
+{
+    print("print inside main\n");
+}
 
 void reverse2( int *arr, int n)
 {

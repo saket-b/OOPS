@@ -10,7 +10,7 @@ class Animal
 class Cat : public Animal
 {
     public:
-        void eat() { std::cout << "I'm eating a rat."; }
+        void eat() { std::cout << "I'm eating a rat."<<endl; }
 };
 
 void func(Animal *xyz) { xyz->eat(); }
@@ -20,8 +20,8 @@ int main()
     Animal *animal = new Animal;
     Cat *cat = new Cat;
     
-    // animal->eat(); // Outputs: "I'm eating generic food."
-    // cat->eat(); 
+     animal->eat(); // Outputs: "I'm eating generic food."
+     cat->eat(); 
     
     func(animal); // Outputs: "I'm eating generic food."
     func(cat); // o/p I'm eating generic food".
