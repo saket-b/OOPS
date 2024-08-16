@@ -6,7 +6,7 @@ class String{
     private:
     char *str;
     public:
-    String(char *str1)
+    String(const char *str1)
     {
         int len = strlen(str1);
         str = (char*)malloc(sizeof(char) * len);
@@ -14,9 +14,11 @@ class String{
     }
 	void operator=(const String &obj)
 	{
+        if(this == &obj)return;
 		int len = strlen(obj.str);
 		str = (char*) malloc(sizeof(char)*len);
 		strcpy(str, obj.str);	
+        //return *this;
 		
 	}
     char *get()
@@ -24,6 +26,7 @@ class String{
         return str;
 
     }
+    String(){}
 
 };
 
@@ -31,8 +34,9 @@ int main()
 {
     String s1("Geekforgeeks");
 
-	String s2 = s1;
+	String s2;
+    s2 = s1;
 
-    cout<<s1.get()<<endl;
+    cout<<s2.get()<<endl;
     
 }

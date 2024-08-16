@@ -43,9 +43,14 @@ class Box
 	static int length;
 	static int breadth;
 	static int height;
+	int x ;
 	
 	public:
 	
+	Box()
+	{
+		x = 0;
+	}
 	static void print()
 	{
 		cout << "The value of the length is: " << length << endl;
@@ -54,6 +59,7 @@ class Box
 		length++;
 		breadth++;
 		height++;
+		//x++;
 	}
 };
 
@@ -68,7 +74,9 @@ int Box :: height = 30;
 int main()
 {
 	
-	Box::print();
+	// Box::print();
+	Box obj;
+	obj.print();
 	// Box b;
 	
 	// cout << "Static member function is called through Object name: \n" << endl;

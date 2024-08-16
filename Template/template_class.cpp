@@ -19,6 +19,8 @@ class Base {
     }
 };
 
+Base<int>;
+Base<char>;
 
 int main()
 {
